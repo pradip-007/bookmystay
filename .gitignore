@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log*
+.env
+.DS_Store
+
+# Vite/React client (if client lives in client/)
+client/node_modules/
+client/dist/
+client/build/
+
+# Logs
+logs
+*.log
