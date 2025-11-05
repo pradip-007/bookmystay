@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { apiFetch } from "../api";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
 import hero from "../assets/image/login_image.jpg";
 
 export default function Login({ onLogin, switchToRegister }) {
@@ -10,7 +8,7 @@ export default function Login({ onLogin, switchToRegister }) {
   const [password, setPassword] = useState("");
   const [err, setErr] = useState(null);
   const [loading, setLoading] = useState(false);
-
+ 
   async function submit(e) {
     e.preventDefault();
     setErr(null);
